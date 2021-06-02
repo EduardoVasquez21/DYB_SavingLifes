@@ -125,6 +125,7 @@ namespace ProyectoProgramacion.VISTA
             this.btnAgendarCita.BackColor = System.Drawing.Color.Maroon;
             this.btnAgendarCita.FlatAppearance.BorderSize = 2;
             this.btnAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgendarCita.ForeColor = System.Drawing.SystemColors.Control;
             this.btnAgendarCita.Location = new System.Drawing.Point(214, 229);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.Size = new System.Drawing.Size(105, 29);

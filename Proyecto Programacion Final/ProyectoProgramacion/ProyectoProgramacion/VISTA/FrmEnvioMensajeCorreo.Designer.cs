@@ -42,6 +42,7 @@ namespace ProyectoProgramacion.VISTA
             this.dtgEnviarCorreo = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnatras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEnviarCorreo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,11 +93,13 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.btnEnviar.BackColor = System.Drawing.Color.Firebrick;
             this.btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnviar.FlatAppearance.BorderSize = 2;
             this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.ForeColor = System.Drawing.Color.White;
             this.btnEnviar.Location = new System.Drawing.Point(647, 417);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(110, 33);
@@ -120,7 +123,7 @@ namespace ProyectoProgramacion.VISTA
             this.txtAjuntarArchivo.Name = "txtAjuntarArchivo";
             this.txtAjuntarArchivo.Size = new System.Drawing.Size(437, 20);
             this.txtAjuntarArchivo.TabIndex = 9;
-            this.txtAjuntarArchivo.Text = "C:\\Users\\Vkaiido\\Desktop\\Proyecto Programacion Final\\Sangre.png";
+            this.txtAjuntarArchivo.Text = "C:\\Users\\Vkaiido\\Desktop\\DonarSangre.png";
             // 
             // btnExaminar
             // 
@@ -159,12 +162,31 @@ namespace ProyectoProgramacion.VISTA
             this.Column2.HeaderText = "Correo Electronico";
             this.Column2.Name = "Column2";
             // 
+            // btnatras
+            // 
+            this.btnatras.BackColor = System.Drawing.Color.Firebrick;
+            this.btnatras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnatras.FlatAppearance.BorderSize = 2;
+            this.btnatras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnatras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnatras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnatras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnatras.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnatras.Location = new System.Drawing.Point(36, 417);
+            this.btnatras.Name = "btnatras";
+            this.btnatras.Size = new System.Drawing.Size(81, 33);
+            this.btnatras.TabIndex = 12;
+            this.btnatras.Text = "Regresar";
+            this.btnatras.UseVisualStyleBackColor = false;
+            this.btnatras.Click += new System.EventHandler(this.btnatras_Click);
+            // 
             // FrmEnvioMensajeCorreo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(836, 474);
+            this.Controls.Add(this.btnatras);
             this.Controls.Add(this.dtgEnviarCorreo);
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.txtAjuntarArchivo);
@@ -199,5 +221,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.DataGridView dtgEnviarCorreo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button btnatras;
     }
 }
