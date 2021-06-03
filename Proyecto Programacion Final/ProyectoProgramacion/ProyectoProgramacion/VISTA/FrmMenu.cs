@@ -116,7 +116,7 @@ namespace ProyectoProgramacion.VISTA
         {
             this.Close();
             video = new FrmVisualizador(this);
-            video.reproductor("\\Video\\Donar sangre.mp4");
+            video.reproductor("\\Video\\Donación de sangre.mp4");
             video.Show();
         }
     }
