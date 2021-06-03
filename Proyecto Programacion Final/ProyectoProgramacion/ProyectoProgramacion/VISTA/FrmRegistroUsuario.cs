@@ -116,6 +116,11 @@ namespace ProyectoProgramacion.VISTA
 
             Carga();
             Clear();
+            dtgRegistroUsuario.Refresh();
+            dtgRegistroUsuario.ClearSelection();
+            int lastrow = dtgRegistroUsuario.Rows.Count - 1;
+            dtgRegistroUsuario.FirstDisplayedScrollingRowIndex = lastrow;
+            dtgRegistroUsuario.Rows[lastrow].Selected = true;
 
 
         }
@@ -156,6 +161,24 @@ namespace ProyectoProgramacion.VISTA
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txtNombreDonante_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                txtDireccion.Focus();
+            }
+        }
+
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                txtDui.Focus();
             }
         }
     }

@@ -41,6 +41,7 @@ namespace ProyectoProgramacion.VISTA
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombreDonante = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@ namespace ProyectoProgramacion.VISTA
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.lblCorreoElectronico = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgRegistroUsuario)).BeginInit();
             this.SuspendLayout();
@@ -182,6 +182,12 @@ namespace ProyectoProgramacion.VISTA
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Correo";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
             // lblId
             // 
             this.lblId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -214,6 +220,7 @@ namespace ProyectoProgramacion.VISTA
             this.txtNombreDonante.Name = "txtNombreDonante";
             this.txtNombreDonante.Size = new System.Drawing.Size(180, 20);
             this.txtNombreDonante.TabIndex = 5;
+            this.txtNombreDonante.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreDonante_KeyPress);
             // 
             // txtDireccion
             // 
@@ -224,6 +231,7 @@ namespace ProyectoProgramacion.VISTA
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(180, 20);
             this.txtDireccion.TabIndex = 6;
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // txtTelefono
             // 
@@ -534,12 +542,6 @@ namespace ProyectoProgramacion.VISTA
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(194, 20);
             this.txtCorreo.TabIndex = 27;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Correo";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
             // 
             // btnAct
             // 

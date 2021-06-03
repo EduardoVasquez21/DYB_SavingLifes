@@ -80,11 +80,11 @@ namespace ProyectoProgramacion.VISTA
             this.lblBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblBienvenida.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.ForeColor = System.Drawing.Color.White;
-            this.lblBienvenida.Location = new System.Drawing.Point(190, 230);
+            this.lblBienvenida.Location = new System.Drawing.Point(221, 231);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(218, 23);
+            this.lblBienvenida.Size = new System.Drawing.Size(128, 23);
             this.lblBienvenida.TabIndex = 3;
-            this.lblBienvenida.Text = "Donating Your Blood";
+            this.lblBienvenida.Text = "Saving Lifes";
             this.lblBienvenida.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
