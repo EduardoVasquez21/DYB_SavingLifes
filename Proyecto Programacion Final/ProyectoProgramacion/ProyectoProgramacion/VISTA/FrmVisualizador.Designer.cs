@@ -114,6 +114,7 @@ namespace ProyectoProgramacion.VISTA
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnPlay);
             this.Name = "FrmVisualizador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVisualizador";
             this.Load += new System.EventHandler(this.FrmVisualizador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
