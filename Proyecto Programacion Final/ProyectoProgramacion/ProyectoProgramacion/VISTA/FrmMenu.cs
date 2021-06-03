@@ -114,7 +114,7 @@ namespace ProyectoProgramacion.VISTA
 
         private void informacionInteractivaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
             video = new FrmVisualizador(this);
             video.reproductor("\\Video\\Donación de sangre.mp4");
             video.Show();

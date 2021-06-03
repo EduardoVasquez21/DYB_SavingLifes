@@ -77,6 +77,11 @@ namespace ProyectoProgramacion.VISTA
             {
                 MessageBox.Show(ex.ToString());
             }
+            dtgAgendarCita.Refresh();
+            dtgAgendarCita.ClearSelection();
+            int lastrow = dtgAgendarCita.Rows.Count - 1;
+            dtgAgendarCita.FirstDisplayedScrollingRowIndex = lastrow;
+            dtgAgendarCita.Rows[lastrow].Selected = true;
         }
 
         private void FrmAgendarCitas2_Load(object sender, EventArgs e)

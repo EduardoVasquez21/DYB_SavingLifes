@@ -72,6 +72,11 @@ namespace ProyectoProgramacion.VISTA
             {
                 MessageBox.Show(ex.ToString());
             }
+            dtgBuscarDonante.Refresh();
+            dtgBuscarDonante.ClearSelection();
+            int lastrow = dtgBuscarDonante.Rows.Count - 1;
+            dtgBuscarDonante.FirstDisplayedScrollingRowIndex = lastrow;
+            dtgBuscarDonante.Rows[lastrow].Selected = true;
 
         }
 
