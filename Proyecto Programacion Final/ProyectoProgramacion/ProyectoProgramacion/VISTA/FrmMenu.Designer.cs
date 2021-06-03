@@ -45,6 +45,7 @@ namespace ProyectoProgramacion.VISTA
             this.porqueDonarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrevistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.informacionInteractivaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,7 +142,7 @@ namespace ProyectoProgramacion.VISTA
             this.enviarCorreoADonantesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(299, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(422, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,7 +150,8 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.iNFORMACIONToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.porqueDonarToolStripMenuItem1,
-            this.requisitosParaDonacionesToolStripMenuItem1});
+            this.requisitosParaDonacionesToolStripMenuItem1,
+            this.informacionInteractivaToolStripMenuItem});
             this.iNFORMACIONToolStripMenuItem1.Name = "iNFORMACIONToolStripMenuItem1";
             this.iNFORMACIONToolStripMenuItem1.Size = new System.Drawing.Size(101, 20);
             this.iNFORMACIONToolStripMenuItem1.Text = "INFORMACION";
@@ -172,7 +174,7 @@ namespace ProyectoProgramacion.VISTA
             // eNTREVISTAToolStripMenuItem1
             // 
             this.eNTREVISTAToolStripMenuItem1.Name = "eNTREVISTAToolStripMenuItem1";
-            this.eNTREVISTAToolStripMenuItem1.Size = new System.Drawing.Size(82, 20);
+            this.eNTREVISTAToolStripMenuItem1.Size = new System.Drawing.Size(85, 20);
             this.eNTREVISTAToolStripMenuItem1.Text = "ENTREVISTA";
             this.eNTREVISTAToolStripMenuItem1.Click += new System.EventHandler(this.eNTREVISTAToolStripMenuItem1_Click);
             // 
@@ -227,6 +229,13 @@ namespace ProyectoProgramacion.VISTA
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // informacionInteractivaToolStripMenuItem
+            // 
+            this.informacionInteractivaToolStripMenuItem.Name = "informacionInteractivaToolStripMenuItem";
+            this.informacionInteractivaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.informacionInteractivaToolStripMenuItem.Text = "Informacion Interactiva";
+            this.informacionInteractivaToolStripMenuItem.Click += new System.EventHandler(this.informacionInteractivaToolStripMenuItem_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,5 +282,6 @@ namespace ProyectoProgramacion.VISTA
         private System.Windows.Forms.ToolStripMenuItem porqueDonarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem requisitosParaDonacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem enviarCorreoADonantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informacionInteractivaToolStripMenuItem;
     }
 }

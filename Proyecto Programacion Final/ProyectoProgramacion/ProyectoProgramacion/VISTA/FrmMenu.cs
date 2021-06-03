@@ -12,6 +12,7 @@ namespace ProyectoProgramacion.VISTA
 {
     public partial class FrmMenu : Form
     {
+        FrmVisualizador video;
         public FrmMenu()
         {
             InitializeComponent();
@@ -109,6 +110,14 @@ namespace ProyectoProgramacion.VISTA
             this.Close();
             FrmEnvioMensajeCorreo Correo= new FrmEnvioMensajeCorreo();
             Correo.Show();
+        }
+
+        private void informacionInteractivaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            video = new FrmVisualizador(this);
+            video.reproductor("\\Video\\Donar sangre.mp4");
+            video.Show();
         }
     }
 }
