@@ -105,5 +105,12 @@ namespace ProyectoProgramacion.VISTA
             txtPara.Text = Correo;
             
         }
+
+        private void btnatras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmMenu frm = new FrmMenu();
+            frm.Show();
+        }
     }
 }

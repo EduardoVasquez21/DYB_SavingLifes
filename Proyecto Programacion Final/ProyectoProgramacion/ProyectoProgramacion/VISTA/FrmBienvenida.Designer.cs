@@ -41,7 +41,8 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.btnIngresarBienvenida.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnIngresarBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnIngresarBienvenida.FlatAppearance.BorderSize = 0;
+            this.btnIngresarBienvenida.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnIngresarBienvenida.FlatAppearance.BorderSize = 2;
             this.btnIngresarBienvenida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnIngresarBienvenida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnIngresarBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -58,7 +59,8 @@ namespace ProyectoProgramacion.VISTA
             // 
             this.btnSalirBienvenida.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSalirBienvenida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSalirBienvenida.FlatAppearance.BorderSize = 0;
+            this.btnSalirBienvenida.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSalirBienvenida.FlatAppearance.BorderSize = 2;
             this.btnSalirBienvenida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSalirBienvenida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSalirBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
